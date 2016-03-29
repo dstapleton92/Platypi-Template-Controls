@@ -1,6 +1,8 @@
-<div class="friend" plat-visible="{{ @even }}">
-    <p>This is one of my friends:</p>
-    <h3>{{ name }}</h3>
-    <h5>{{ age }}</h5>
-    <h5>{{ title }}</h5>
-</div>
+<plat-if plat-options="{ condition: @even }">
+    <div class="friend">
+        <p>This is one of my friends:</p>
+        <h3>{{ name }}</h3>
+        <h5>{{ age }}</h5>
+        <h5>{{ title }}</h5>
+    </div>
+</plat-if>
